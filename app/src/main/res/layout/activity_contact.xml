@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/Gainsboro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactActivity">
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Contact details"
+        android:textSize="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:hint = "Enter your Phone Number"
+        android:id="@+id/phone_no"
+        android:focusable = "true"
+        android:textColorHint = "#ffff25e6"
+        android:layout_marginTop = "100dp"
+        android:layout_below = "@+id/contact"
+        android:layout_alignParentLeft = "true"
+        android:layout_alignParentStart = "true"
+        android:layout_alignParentRight = "true"
+        android:layout_alignParentEnd = "true" />
+
+
+
+
+    <EditText
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:hint = "Email Address"
+        android:id="@+id/email_add"
+        android:focusable = "true"
+        android:textColorHint = "#ffff25e6"
+        android:layout_marginTop = "160dp"
+        android:layout_below = "@+id/contact"
+        android:layout_alignParentLeft = "true"
+        android:layout_alignParentStart = "true"
+        android:layout_alignParentRight = "true"
+        android:layout_alignParentEnd = "true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/personal"
+        android:text="Personal Details"
+        android:layout_below="@+id/contact"
+        android:textSize="35dp"
+        android:layout_marginTop="250dp"
+        android:layout_centerInParent="true"/>
+
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact"
+        android:layout_marginTop="305dp"
+        android:text="Gender"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <RadioButton
+        android:id="@+id/radio_button_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="300dp"
+        android:layout_toRightOf="@id/gender"
+        android:buttonTint="@color/black"
+        android:text="Male"
+        android:textSize="20dp" />
+
+    <RadioButton
+        android:id="@+id/radio_button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact"
+        android:layout_marginStart="117dp"
+        android:layout_marginLeft="-214dp"
+        android:layout_marginTop="300dp"
+        android:layout_toEndOf="@+id/gender"
+        android:layout_toRightOf="@id/radio_button_1"
+        android:buttonTint="@color/black"
+        android:text="Female"
+        android:textSize="20dp" />
+
+    <RadioButton
+        android:id="@+id/radio_button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact"
+        android:layout_marginTop="300dp"
+        android:text="Others"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:buttonTint="@color/black"
+        android:layout_toRightOf="@id/radio_button_2"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next_2"
+        android:layout_width="92dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="196dp"
+        android:background="@color/teal_200"
+        android:text="Next"
+        android:layout_below="@id/contact"
+        android:layout_marginTop="450dp"
+        android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>
